@@ -22,3 +22,4 @@ $ docker run -it --rm --name myproject -v "$(pwd)":/usr/src/mymaven -w /usr/src/
 $ ./mvn.sh clear package
 $ ./mvn.sh deploy 
 
+docker pull openjdk:8-jre-alpine # sprintboot and tomcat included
