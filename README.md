@@ -14,8 +14,7 @@ git config --unset http.proxy <br>
 git config --unset https.proxy <br>
 
 ## git clone for download
-git clone https://github.com/lqwangxg/script
-cd script
+git clone https://github.com/lqwangxg/script 
 
 ## git commit and push for upload
 git commit -a -m "description of commit" <br>
