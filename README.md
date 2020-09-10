@@ -7,11 +7,19 @@ script of shell, vb, js and so on.
 git config --global user.email "lqwangxg@gmail.com" <br>
 git config --global user.name "lqwangxg"
 
+## git unset config 
+git config --global  --unset http.proxy <br>
+git config --global  --unset https.proxy <br>
+git config --unset http.proxy <br>
+git config --unset https.proxy <br>
+
+## git clone for download
 git clone https://github.com/lqwangxg/script
 cd script
 
-git add .
-git commit -a -m "description of commit"
+## git commit and push for upload
+git commit -a -m "description of commit" <br>
+git push -u origin master 
 
 ## maven build command under docker 
 $ docker run -it --rm --name myproject  \\ <br>-v "$(pwd)":/usr/src/mymaven  \\ <br>  -w /usr/src/mymaven lqwangxg/maven-java11 mvn --version
