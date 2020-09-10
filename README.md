@@ -14,10 +14,10 @@ git add .
 git commit -a -m "description of commit"
 
 ## maven build command under docker 
-$ docker run -it --rm --name myproject  -v "$(pwd)":/usr/src/mymaven   -w /usr/src/mymaven lqwangxg/maven-java11 mvn --version
+$ docker run -it --rm --name myproject  \\ <br>-v "$(pwd)":/usr/src/mymaven  \\ <br>  -w /usr/src/mymaven lqwangxg/maven-java11 mvn --version
 
 ### mvn.sh
-$ docker run -it --rm --name myproject -v "$(pwd)":/usr/src/mymaven  -w /usr/src/mymaven lqwangxg/maven-java11 mvn $@
+$ docker run -it --rm --name myproject  \\ <br>-v "$(pwd)":/usr/src/mymaven   \\ <br>-w /usr/src/mymaven lqwangxg/maven-java11 mvn $@
  <br>
 $ ./mvn.sh clear package <br>
 $ ./mvn.sh deploy 
