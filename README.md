@@ -30,3 +30,7 @@ $ ./mvn.sh clear package <br>
 $ ./mvn.sh deploy 
 <br>
 docker pull openjdk:8-jre-alpine # sprintboot and tomcat included
+
+## docker-stack-mongo.yml
+mongo is a innerdb for MongoExpress and other microservice will access it by innerport,
+it no need open outer port 27017 now.
