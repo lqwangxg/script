@@ -4,6 +4,7 @@ import (
 "net/http"
 "github.com/labstack/echo"
 "github.com/labstack/echo/middleware"
+"prj/controllers"
 )
 
 func main() {
@@ -18,8 +19,10 @@ func main() {
    e.GET("/", func(c echo.Context) error {
      return c.String(http.StatusOK,"Hello, wolrd!, this is from server written by golang.")
    })
-   e.Logger.Fatal(e.Start(":8000"))
+   e.POST("/price", controllers.GrabPrice) //price endpoint
 
+   //Server 
+   e.Logger.Fatal(e.Start(":8000"))
 }
 
 
